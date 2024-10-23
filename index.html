@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo.jfif" alt="Logo do Pet Shop" class="logo">
+            <h1>Bem-vindo ao Pet Shop!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#login">Login</a></li> <!-- Link para a área de login -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Seu pet merece o melhor! Oferecemos uma ampla gama de produtos e serviços para cuidar do seu melhor amigo. Nossa missão é proporcionar bem-estar e felicidade para todos os pets.</p>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="img/racao.webp" alt="Ração Premium">
+                    <h3>Ração Premium</h3>
+                    <p>Ração de alta qualidade para a saúde do seu pet.</p>
+                    <p class="preco">R$ 89,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/brinquedao.jfif" alt="Brinquedo para Cachorro">
+                    <h3>Brinquedo para Cachorro</h3>
+                    <p>Brinquedos divertidos e seguros para seu cachorro.</p>
+                    <p class="preco">R$ 29,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/caminha.webp" alt="Caminha Confortável">
+                    <h3>Caminha Confortável</h3>
+                    <p>Caminhas macias para o conforto do seu pet.</p>
+                    <p class="preco">R$ 149,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/roupa.jfif" alt="Roupinha para Pet">
+                    <h3>Roupinha para Pet</h3>
+                    <p>Estilo e conforto para seu pet com nossas roupinhas.</p>
+                    <p class="preco">R$ 59,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/cats.jfif" alt="Acessórios para Gatos">
+                    <h3>Acessórios para Gatos</h3>
+                    <p>Brinquedos e acessórios para a diversão dos felinos.</p>
+                    <p class="preco">R$ 39,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/higiene.webp" alt="Produtos de Higiene">
+                    <h3>Produtos de Higiene</h3>
+                    <p>Cuide da higiene do seu pet com nossos produtos.</p>
+                    <p class="preco">R$ 19,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico">
+                    <h3>Banho e Tosa</h3>
+                    <p>Cuidados especiais para deixar seu pet sempre lindo!</p>
+                </div>
+                <div class="servico">
+                    <h3>Adestramento</h3>
+                    <p>Ensine seu pet a ser obediente e bem comportado.</p>
+                </div>
+                <div class="servico">
+                    <h3>Consultoria Veterinária</h3>
+                    <p>Profissionais experientes para cuidar da saúde do seu pet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flashcards">
+        <div class="container">
+            <h2>Flash Cards de Cuidados com Pets</h2>
+            <div class="flashcards-container">
+                <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                    <div class="front">Como cuidar de um cachorro?</div>
+                    <div class="back">Alimente-o bem, leve para passear e dê muito amor!</div>
+                </div>
+                <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                    <div class="front">Como cuidar de um gato?</div>
+                    <div class="back">Ofereça um arranhador, brinquedos e uma caixa de areia limpa.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="login">
+        <div class="container">
+            <h2>Área de Login</h2>
+            <form id="loginForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p class="message">Não tem uma conta? <a href="#register">Cadastre-se</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pet Shop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
